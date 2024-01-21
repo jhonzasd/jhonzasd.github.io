@@ -1,28 +1,39 @@
 ---
-import ExperienceItem from "./ExperienceItem.astro"
-const EXPERIENCIE = [
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCE = [
   {
-    date: "Actualmente...",
-    title: "Creador de Contenido − Twitch",
+    date: "Febrero 2023 - Presente",
+    title: "Docente - NPC's: Creation",
     description:
-      "Divulgo sobre programación y desarrollo web en diferentes plataformas. Galardonado como mejor creador de contenido de habla no-inglesa en 2022 y mejor comunidad en 2023 por GitHub.",
-    link: "https://twitch.tv/midudev",
+      "Divulgo y comparto mis conocimientos sobre programación y desarrollo de videojuegos en el semillero NPC's: Creation en la I.E Madre Laura, junto a otros entusiastas. Nos enfocamos en proyectos creativos, desde juegos de lógica hasta programación avanzada. Fomentamos la colaboración y organizamos eventos que desafían a los estudiantes, cultivando habilidades técnicas y fomentando la creatividad.",
+    link: "https://www.iemadrelaura.edu.co",
   },
   {
-    date: "Septiembre 2022",
-    title: "Principal Frontend Engineer  − Adevinta Spain",
+    date: "Noviembre 2023",
+    title: "Desarrollador web - Hackatón ExpoIngeniería",
     description:
-      "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 15 equipos.",
+      "Responsable de la creación de una red social deportiva llamada 'FitLine', utilizando HTML, CSS y JavaScript junto a un equipo de 4 personas durante el Hack Challenge.",
+    link: "https://expoingenieria.edu.co/ehc/",
+    repo: "https://github.com/jhonzasd/websita"
   },
-]
+  {
+    date: "Agosto - Septiembre 2023",
+    title: "Desarrollador de videojuegos - Olimpiadas Tech",
+    description:
+      "Responsable de la programación y desarrollo del proyecto en Unity con C#, además del project management. Se obtiene el primer puesto en la categoría de desarrollo de videojuegos con el videojuego Project: AXL.",
+    link: "https://cvs.rutanmedellin.org/olimpiadas",
+    repo: "https://github.com/jhonzasd/project-axl"
+  },
+];
 ---
 
 <ol class="relative border-s border-gray-200 ml-3">
   {
-    EXPERIENCIE.map((experiencie) => (
+    EXPERIENCE.map((experiencie) => (
       <li class="mb-10 ms-4">
         <ExperienceItem {...experiencie} />
       </li>
     ))
   }
 </ol>
+
