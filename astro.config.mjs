@@ -14,7 +14,7 @@ export default defineConfig({
   },
 
   // Configuración de la ruta base para GitHub Pages
-  site: "https://jhonzasd.github.io", // Reemplaza "nombre-de-repositorio" con el nombre real de tu repositorio en GitHub
+  site: "https://jhonzasd.github.io",
 
   // Puedes agregar más configuraciones según sea necesario
 });
